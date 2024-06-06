@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="SpiceJetSuite">
+  <test thread-count="1" name="SjTest">
+    <classes>
+      <class name="baseSpiceJet.TC_05_BookingSpiceJetFlight"/>
+      <class name="baseSpiceJet.SetUpSpiceJet"/>
+      <class name="baseSpiceJet.TC_06_ValidationOfFiledsSpicejet"/>
+      <class name="baseSpiceJet.TC_07_FillingBookingFormPaymentInfo"/>
+      <class name="baseSpiceJet.TC_01_SpiceJetSignup"/>
+      <class name="baseSpiceJet.TC_03_OneWaySearchFlightSpiceJet"/>
+      <class name="baseSpiceJet.TC_04_RoundTripSearchFlight"/>
+      <class name="baseSpiceJet.TC_02_LoginSpiceJet"/>
+    </classes>
+  </test> <!-- SjTest -->
+</suite> <!-- SpiceJetSuite -->

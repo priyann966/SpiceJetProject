@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [SpiceJetSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="SjTest(failed)">
+    <classes>
+      <class name="baseSpiceJet.TC_01_SpiceJetSignup">
+        <methods>
+          <include name="testSignUp"/>
+          <include name="setUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- baseSpiceJet.TC_01_SpiceJetSignup -->
+    </classes>
+  </test> <!-- SjTest(failed) -->
+</suite> <!-- Failed suite [SpiceJetSuite] -->
