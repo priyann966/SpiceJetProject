@@ -29,7 +29,7 @@ public class TC_01_SpiceJetSignup extends SetUpSpiceJet {
 		signupspicejet.clickCheckbox();
 
 		signupspicejet.clickSubmit();
-
+//facing issue with the website after clicking on the submit button
 	}
 
 }
