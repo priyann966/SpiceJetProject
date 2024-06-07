@@ -23,7 +23,7 @@ public class TC_03_OneWaySearchFlightSpiceJet extends SetUpSpiceJet{
 		searchflight.selPassengers();
 		
 		searchflight.searchFlights();
-        Thread.sleep(5000);
+        Thread.sleep(6000);
 
 
 	}
