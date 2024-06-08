@@ -139,6 +139,18 @@ final WebDriver driver;
 		submit.click();
 	}
 	
+	public String negativeSceValidation() {
+		WebElement m = driver.findElement(By.xpath("//div[text()='Please enter valid mobile number']"));
+		String f = m.getText();
+		return f;
+
+	}
 	
+	public String negativeSce1Validation() {
+		WebElement m1 = driver.findElement(By.xpath("//div[text()='Please enter minimum 2 characters']"));
+		String f1 = m1.getText();
+		return f1;
+
+	}
 	
 }

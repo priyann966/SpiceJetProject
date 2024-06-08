@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -23,9 +24,13 @@ public class SetUpSpiceJet {
 
 	@BeforeMethod
 	public void setUp() {
+		// using headlesschrome taking more to execute and tests are failing
 //      ChromeOptions opt =new ChromeOptions();
 //      opt.addArguments("--headless=new");
 //		driver = new ChromeDriver(opt);
+//		WebDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
+		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.navigate().to("https://www.spicejet.com/");

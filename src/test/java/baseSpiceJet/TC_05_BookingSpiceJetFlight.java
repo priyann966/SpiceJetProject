@@ -23,7 +23,6 @@ public class TC_05_BookingSpiceJetFlight extends SetUpSpiceJet {
 
 		searchflight.searchFlights();
 
-		// Thread.sleep(2000);
 
 		BookingSpiceJetFlight booking = new BookingSpiceJetFlight(driver);
 

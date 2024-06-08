@@ -1,6 +1,8 @@
 package spicejetFlightBooking;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,7 +41,7 @@ public class LoginSpiceJet {
 	}
 	
 	public void enterEmail(String email_) {
-		enteremail.sendKeys(email_);
+		enteremail.sendKeys( email_);
 	}
 	
 	public void enterPassword(String password_) {
@@ -50,8 +52,12 @@ public class LoginSpiceJet {
 
 		Actions actions = new Actions(driver);
 		actions.moveToElement(clicklogin).click().perform();		
-		//clicklogin.click();
 	}
-	
+	public String negativeScenario() {
+		WebElement m = driver.findElement(By.xpath("//div[text()='Please enter a valid password']"));
+		String act = m.getText();
+		return act;
+
+	}
 
 }
