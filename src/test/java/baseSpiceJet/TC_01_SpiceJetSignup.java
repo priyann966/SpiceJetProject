@@ -24,30 +24,28 @@ public class TC_01_SpiceJetSignup extends SetUpSpiceJet {
 		signupspicejet.firstName("riya");
 
 		signupspicejet.lastName("MS");
-
-		signupspicejet.selectCountry();
 		Thread.sleep(2000);
+		signupspicejet.selectCountry();
 
 		signupspicejet.selectDateOfBirth();
 
-		signupspicejet.mobileNo("9876");
+		signupspicejet.mobileNo("98763");
 		signupspicejet.enterEmail("priya98765@gmail.com");
-
+		
+		String exp = "Please enter valid mobile number";
+		
+		//signupspicejet.enterEmail("priya98765@gmail.com");
 		signupspicejet.enterPassword("Priyanka@123");
 		signupspicejet.confirmPassword("Priyanka@123");
 		signupspicejet.clickCheckbox();
-
-		signupspicejet.clickSubmit();
-		String exp = "Please enter valid mobile number";
 		try {
 			Assert.assertEquals(exp, signupspicejet.negativeSceValidation());
 		} catch (Exception e) {
 			System.out.println("could validate this scenario because of " + e.getMessage());
 		}
-		
-		
-		signupspicejet.mobileNo("987635");
+		signupspicejet.mobileNo("28763");
 		signupspicejet.clickSubmit();
+		
 //facing issue with the website after clicking on the submit button any of the fields are missing and not showing any error 
 	}
 
